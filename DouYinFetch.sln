@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DouYinFetch", "DouYinFetch.csproj", "{4243818E-0F5F-4222-9B8A-25EB8ADC38BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4243818E-0F5F-4222-9B8A-25EB8ADC38BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4243818E-0F5F-4222-9B8A-25EB8ADC38BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4243818E-0F5F-4222-9B8A-25EB8ADC38BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4243818E-0F5F-4222-9B8A-25EB8ADC38BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FDB56C7-2F7E-4231-B2B3-FE615ADABE03}
+	EndGlobalSection
+EndGlobal

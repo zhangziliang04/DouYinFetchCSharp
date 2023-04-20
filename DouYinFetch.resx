@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="configAllBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="configBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="peopleCheckBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="peopleCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="peopleCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="peopleCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="peopleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 55</value>
+  </data>
+  <data name="peopleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="peopleCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="peopleCheckBox.Text" xml:space="preserve">
+    <value>是否展示人员进入</value>
+  </data>
+  <data name="&gt;&gt;peopleCheckBox.Name" xml:space="preserve">
+    <value>peopleCheckBox</value>
+  </data>
+  <data name="&gt;&gt;peopleCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;peopleCheckBox.Parent" xml:space="preserve">
+    <value>configBox</value>
+  </data>
+  <data name="&gt;&gt;peopleCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="danmuCheckBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="danmuCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="danmuCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="danmuCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 30</value>
+  </data>
+  <data name="danmuCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="danmuCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="danmuCheckBox.Text" xml:space="preserve">
+    <value>是否展示弹幕</value>
+  </data>
+  <data name="&gt;&gt;danmuCheckBox.Name" xml:space="preserve">
+    <value>danmuCheckBox</value>
+  </data>
+  <data name="&gt;&gt;danmuCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;danmuCheckBox.Parent" xml:space="preserve">
+    <value>configBox</value>
+  </data>
+  <data name="&gt;&gt;danmuCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="configBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="configBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 28</value>
+  </data>
+  <data name="configBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 143</value>
+  </data>
+  <data name="configBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="configBox.Text" xml:space="preserve">
+    <value>信息配置</value>
+  </data>
+  <data name="&gt;&gt;configBox.Name" xml:space="preserve">
+    <value>configBox</value>
+  </data>
+  <data name="&gt;&gt;configBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configBox.Parent" xml:space="preserve">
+    <value>configAllBox</value>
+  </data>
+  <data name="&gt;&gt;configBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="roomBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="loginButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="loginButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="loginButt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 11</value>
+  </data>
+  <data name="loginButt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 43</value>
+  </data>
+  <data name="loginButt.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="loginButt.Text" xml:space="preserve">
+    <value>抖音登录</value>
+  </data>
+  <data name="&gt;&gt;loginButt.Name" xml:space="preserve">
+    <value>loginButt</value>
+  </data>
+  <data name="&gt;&gt;loginButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loginButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;loginButt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="selectLiveButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="selectLiveButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="selectLiveButt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 11</value>
+  </data>
+  <data name="selectLiveButt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 43</value>
+  </data>
+  <data name="selectLiveButt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="selectLiveButt.Text" xml:space="preserve">
+    <value>直播间选择</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.Name" xml:space="preserve">
+    <value>selectLiveButt</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="liveHallButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="liveHallButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="liveHallButt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 56</value>
+  </data>
+  <data name="liveHallButt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 43</value>
+  </data>
+  <data name="liveHallButt.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="liveHallButt.Text" xml:space="preserve">
+    <value>直播大厅</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.Name" xml:space="preserve">
+    <value>liveHallButt</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="listenButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="listenButt.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listenButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="listenButt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 100</value>
+  </data>
+  <data name="listenButt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 43</value>
+  </data>
+  <data name="listenButt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="listenButt.Text" xml:space="preserve">
+    <value>开始监听</value>
+  </data>
+  <data name="&gt;&gt;listenButt.Name" xml:space="preserve">
+    <value>listenButt</value>
+  </data>
+  <data name="&gt;&gt;listenButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listenButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;listenButt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="initButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="initButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="initButt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 73</value>
+  </data>
+  <data name="initButt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 43</value>
+  </data>
+  <data name="initButt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="initButt.Text" xml:space="preserve">
+    <value>初始化配置</value>
+  </data>
+  <data name="&gt;&gt;initButt.Name" xml:space="preserve">
+    <value>initButt</value>
+  </data>
+  <data name="&gt;&gt;initButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;initButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;initButt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="roomUrlText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomUrlText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="roomUrlText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
+  </data>
+  <data name="roomUrlText.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.Name" xml:space="preserve">
+    <value>roomUrlText</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="roomUrlLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomUrlLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomUrlLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomUrlLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 27</value>
+  </data>
+  <data name="roomUrlLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="roomUrlLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="roomUrlLabel.Text" xml:space="preserve">
+    <value>房间id:</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.Name" xml:space="preserve">
+    <value>roomUrlLabel</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="roomBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="roomBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 144</value>
+  </data>
+  <data name="roomBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="roomBox.Text" xml:space="preserve">
+    <value>房间配置</value>
+  </data>
+  <data name="&gt;&gt;roomBox.Name" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;roomBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomBox.Parent" xml:space="preserve">
+    <value>configAllBox</value>
+  </data>
+  <data name="&gt;&gt;roomBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="configAllBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 429</value>
+  </data>
+  <data name="configAllBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>863, 180</value>
+  </data>
+  <data name="configAllBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="configAllBox.Text" xml:space="preserve">
+    <value>配置信息</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.Name" xml:space="preserve">
+    <value>configAllBox</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="infoBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="userGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="sexText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="sexText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sexText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sexText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 178</value>
+  </data>
+  <data name="sexText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="sexText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="sexText.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="sexText.Text" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="&gt;&gt;sexText.Name" xml:space="preserve">
+    <value>sexText</value>
+  </data>
+  <data name="&gt;&gt;sexText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sexText.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;sexText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="sexLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="sexLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sexLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sexLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 178</value>
+  </data>
+  <data name="sexLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="sexLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="sexLab.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="sexLab.Text" xml:space="preserve">
+    <value>性别:</value>
+  </data>
+  <data name="&gt;&gt;sexLab.Name" xml:space="preserve">
+    <value>sexLab</value>
+  </data>
+  <data name="&gt;&gt;sexLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sexLab.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;sexLab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="followText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="followText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="followText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="followText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 158</value>
+  </data>
+  <data name="followText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="followText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="followText.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="followText.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;followText.Name" xml:space="preserve">
+    <value>followText</value>
+  </data>
+  <data name="&gt;&gt;followText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;followText.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;followText.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="followLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="followLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="followLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="followLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 158</value>
+  </data>
+  <data name="followLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="followLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="followLab.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="followLab.Text" xml:space="preserve">
+    <value>关注数:</value>
+  </data>
+  <data name="&gt;&gt;followLab.Name" xml:space="preserve">
+    <value>followLab</value>
+  </data>
+  <data name="&gt;&gt;followLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;followLab.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;followLab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="userPic.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="userPic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="userPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 24</value>
+  </data>
+  <data name="userPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="userPic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 80</value>
+  </data>
+  <data name="userPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="userPic.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;userPic.Name" xml:space="preserve">
+    <value>userPic</value>
+  </data>
+  <data name="&gt;&gt;userPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userPic.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;userPic.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="userIdText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="userIdText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="userIdText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="userIdText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 122</value>
+  </data>
+  <data name="userIdText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="userIdText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="userIdText.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="userIdText.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;userIdText.Name" xml:space="preserve">
+    <value>userIdText</value>
+  </data>
+  <data name="&gt;&gt;userIdText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userIdText.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;userIdText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="userIdLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="userIdLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="userIdLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="userIdLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 122</value>
+  </data>
+  <data name="userIdLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="userIdLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="userIdLab.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="userIdLab.Text" xml:space="preserve">
+    <value>用户id:</value>
+  </data>
+  <data name="&gt;&gt;userIdLab.Name" xml:space="preserve">
+    <value>userIdLab</value>
+  </data>
+  <data name="&gt;&gt;userIdLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userIdLab.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;userIdLab.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="usernameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="usernameText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="usernameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="usernameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 138</value>
+  </data>
+  <data name="usernameText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="usernameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="usernameText.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="usernameText.Text" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="&gt;&gt;usernameText.Name" xml:space="preserve">
+    <value>usernameText</value>
+  </data>
+  <data name="&gt;&gt;usernameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usernameText.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;usernameText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="usernameLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="usernameLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="usernameLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="usernameLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 138</value>
+  </data>
+  <data name="usernameLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="usernameLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="usernameLab.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="usernameLab.Text" xml:space="preserve">
+    <value>用户昵称:</value>
+  </data>
+  <data name="&gt;&gt;usernameLab.Name" xml:space="preserve">
+    <value>usernameLab</value>
+  </data>
+  <data name="&gt;&gt;usernameLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usernameLab.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;usernameLab.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="userGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>715, 24</value>
+  </data>
+  <data name="userGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 202</value>
+  </data>
+  <data name="userGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="userGroup.Text" xml:space="preserve">
+    <value>用户信息</value>
+  </data>
+  <data name="&gt;&gt;userGroup.Name" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;userGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userGroup.Parent" xml:space="preserve">
+    <value>infoBox</value>
+  </data>
+  <data name="&gt;&gt;userGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="roomGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="avaterPic.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="avaterPic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="avaterPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 24</value>
+  </data>
+  <data name="avaterPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="avaterPic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 80</value>
+  </data>
+  <data name="avaterPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="avaterPic.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;avaterPic.Name" xml:space="preserve">
+    <value>avaterPic</value>
+  </data>
+  <data name="&gt;&gt;avaterPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;avaterPic.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;avaterPic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="roomCountText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomCountText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomCountText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomCountText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 178</value>
+  </data>
+  <data name="roomCountText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roomCountText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="roomCountText.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="roomCountText.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;roomCountText.Name" xml:space="preserve">
+    <value>roomCountText</value>
+  </data>
+  <data name="&gt;&gt;roomCountText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomCountText.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomCountText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="roomCountLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomCountLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomCountLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomCountLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 178</value>
+  </data>
+  <data name="roomCountLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roomCountLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
+  <data name="roomCountLab.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="roomCountLab.Text" xml:space="preserve">
+    <value>直播间人数:</value>
+  </data>
+  <data name="&gt;&gt;roomCountLab.Name" xml:space="preserve">
+    <value>roomCountLab</value>
+  </data>
+  <data name="&gt;&gt;roomCountLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomCountLab.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomCountLab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="roomNameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomNameText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomNameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomNameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 138</value>
+  </data>
+  <data name="roomNameText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roomNameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="roomNameText.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="roomNameText.Text" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="&gt;&gt;roomNameText.Name" xml:space="preserve">
+    <value>roomNameText</value>
+  </data>
+  <data name="&gt;&gt;roomNameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomNameText.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomNameText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="roomNameLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomNameLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomNameLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomNameLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 138</value>
+  </data>
+  <data name="roomNameLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roomNameLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="roomNameLab.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="roomNameLab.Text" xml:space="preserve">
+    <value>房间名称:</value>
+  </data>
+  <data name="&gt;&gt;roomNameLab.Name" xml:space="preserve">
+    <value>roomNameLab</value>
+  </data>
+  <data name="&gt;&gt;roomNameLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomNameLab.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomNameLab.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="roomIdText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomIdText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomIdText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomIdText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 118</value>
+  </data>
+  <data name="roomIdText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roomIdText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="roomIdText.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="roomIdText.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;roomIdText.Name" xml:space="preserve">
+    <value>roomIdText</value>
+  </data>
+  <data name="&gt;&gt;roomIdText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomIdText.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomIdText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="roomLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="roomLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roomLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roomLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 118</value>
+  </data>
+  <data name="roomLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roomLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 12</value>
+  </data>
+  <data name="roomLab.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="roomLab.Text" xml:space="preserve">
+    <value>房间Id:</value>
+  </data>
+  <data name="&gt;&gt;roomLab.Name" xml:space="preserve">
+    <value>roomLab</value>
+  </data>
+  <data name="&gt;&gt;roomLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomLab.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomLab.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="nicknameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="nicknameText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nicknameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nicknameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 158</value>
+  </data>
+  <data name="nicknameText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="nicknameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="nicknameText.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="nicknameText.Text" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="&gt;&gt;nicknameText.Name" xml:space="preserve">
+    <value>nicknameText</value>
+  </data>
+  <data name="&gt;&gt;nicknameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nicknameText.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;nicknameText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="nicknameLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="nicknameLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nicknameLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nicknameLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 158</value>
+  </data>
+  <data name="nicknameLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="nicknameLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 12</value>
+  </data>
+  <data name="nicknameLab.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="nicknameLab.Text" xml:space="preserve">
+    <value>主播昵称:</value>
+  </data>
+  <data name="&gt;&gt;nicknameLab.Name" xml:space="preserve">
+    <value>nicknameLab</value>
+  </data>
+  <data name="&gt;&gt;nicknameLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nicknameLab.Parent" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;nicknameLab.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="roomGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>573, 24</value>
+  </data>
+  <data name="roomGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 202</value>
+  </data>
+  <data name="roomGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="roomGroup.Text" xml:space="preserve">
+    <value>直播间信息</value>
+  </data>
+  <data name="&gt;&gt;roomGroup.Name" xml:space="preserve">
+    <value>roomGroup</value>
+  </data>
+  <data name="&gt;&gt;roomGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomGroup.Parent" xml:space="preserve">
+    <value>infoBox</value>
+  </data>
+  <data name="&gt;&gt;roomGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="danmuBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="danmuText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="danmuText.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="danmuText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 24</value>
+  </data>
+  <data name="danmuText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="danmuText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 360</value>
+  </data>
+  <data name="danmuText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;danmuText.Name" xml:space="preserve">
+    <value>danmuText</value>
+  </data>
+  <data name="&gt;&gt;danmuText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;danmuText.Parent" xml:space="preserve">
+    <value>danmuBox</value>
+  </data>
+  <data name="&gt;&gt;danmuText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="danmuBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 24</value>
+  </data>
+  <data name="danmuBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 390</value>
+  </data>
+  <data name="danmuBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="danmuBox.Text" xml:space="preserve">
+    <value>弹幕列表</value>
+  </data>
+  <data name="&gt;&gt;danmuBox.Name" xml:space="preserve">
+    <value>danmuBox</value>
+  </data>
+  <data name="&gt;&gt;danmuBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;danmuBox.Parent" xml:space="preserve">
+    <value>infoBox</value>
+  </data>
+  <data name="&gt;&gt;danmuBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="peopleBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="peopleText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="peopleText.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="peopleText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 24</value>
+  </data>
+  <data name="peopleText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="peopleText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 360</value>
+  </data>
+  <data name="peopleText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;peopleText.Name" xml:space="preserve">
+    <value>peopleText</value>
+  </data>
+  <data name="&gt;&gt;peopleText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;peopleText.Parent" xml:space="preserve">
+    <value>peopleBox</value>
+  </data>
+  <data name="&gt;&gt;peopleText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="peopleBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="peopleBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 390</value>
+  </data>
+  <data name="peopleBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="peopleBox.Text" xml:space="preserve">
+    <value>人员进入列表</value>
+  </data>
+  <data name="&gt;&gt;peopleBox.Name" xml:space="preserve">
+    <value>peopleBox</value>
+  </data>
+  <data name="&gt;&gt;peopleBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;peopleBox.Parent" xml:space="preserve">
+    <value>infoBox</value>
+  </data>
+  <data name="&gt;&gt;peopleBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="infoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 3</value>
+  </data>
+  <data name="infoBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 420</value>
+  </data>
+  <data name="infoBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="infoBox.Text" xml:space="preserve">
+    <value>信息列表</value>
+  </data>
+  <data name="&gt;&gt;infoBox.Name" xml:space="preserve">
+    <value>infoBox</value>
+  </data>
+  <data name="&gt;&gt;infoBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;infoBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;infoBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>868, 613</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAD////////////////+/v7/9/b4//Tz9f/w7/H/p6Ko/0k8SP8fER//Ggsa/xsLHP8bCxz/Gwsd/xsL
+        Hf8bCx3/Gwsd/xsLHf8bCx3/Gwsc/xsLHP8aCxr/IBEf/0k8SP+noqj/8O/x//Tz9f/39vj//v7+////
+        //////////////////////////////7+/v/19Pb/8O/y/3RtdP8ZCxj/GgoZ/xoLG/8bCxz/Gwsd/xsL
+        Hv8cCyD/HAsg/xwLIP8cCyD/HAsg/xwLH/8bCx3/Gwsd/xoKHP8aCxr/GgoZ/xkLGP9zbHT/8O/y//X0
+        9v/+/v7//////////////////////////////////v7+//Lx8/+TjZP/GgoY/xoKGf8aChv/Gwsc/xsL
+        Hf8cDB//HQsh/x0MIf8dDCH/HQsi/x0LIv8dCyL/HQwh/xwLIP8cCyD/Gwsd/xsLHP8aChv/GgoZ/xoL
+        GP+SjZP/8vHz//7+/v/////////////////////////////////+/v7/397g/yQXI/8aCxn/Ggob/xsL
+        HP8bCx//HAsg/x0MIf8hDTH/LhFm/zARb/8lDkb/Hgsk/x4LJP8eCyP/HQsi/x0MIf8cCyD/Gwse/xoK
+        HP8aChv/GgsZ/yQXI//f3eD//v7+//////////////////////////////////7+/v+QiZD/GgsY/xoK
+        Gv8aChz/Gwse/xwLIP8dCyP/PBqF/3pQ7v+DWvj/ZTD3/1QY/P9EFbn/Iw04/x4LJP8eCyT/Hgsk/x0L
+        Iv8cCyD/Gwse/xsLHP8aChr/GQoY/46IkP/+/v7//////////////////////////////////v7+/1JH
+        Uf8aCxn/Ggsb/xsLHf8cCyD/HQwh/31tlP/w6/n//v7+//7+/v/8+/3/v6r2/10n+f9MF9b/Iw00/x8M
+        J/8eCyX/Hgsj/x0LIv8cCyD/Gwsd/xoKHP8ZChn/UUdR//7+/v//////////////////////////////
+        ///+/v7/LB4r/xoLGv8bCxz/HAsg/x0MIf+FfWb//v79///+/v////////////7+///+/v7/28/4/1wj
+        +f8/FKn/IAwo/x8MJ/8eCyT/Hgsj/x0MIf8cCyD/Gwsc/xoLGv8sHir//v7+////////////////////
+        //////////////39/f8cDRz/Ggoc/xsLH/8dCyH/T0Es//n61P/+/v7///////7+/v/8/e//+/zl//3+
+        /f/+/v7/tp73/1QZ+f8nDkb/IAwp/x8MJv8eCyT/Hgsj/xwLIf8bCx//Ggoc/xwNHP/9/f3/////////
+        /////////////////////////Pz8/xsMG/8bCxz/HAsg/x0LIv+/ulX//v79///////+/v3/8vPB/+ro
+        WP/9/VX/+/uQ//7+/P/7+v3/aDT3/zgSjf8hDCv/IAwo/x8MJv8eCyT/HQsi/xwLH/8bCxz/Gwwb//z8
+        /P/////////////////////////////////8/Pz/Gwwc/xsLHv8dDCD/MyMm//n6if/+/v7//v7+/8i5
+        6/8vGjr/Iw0w/3lrQf/8+1j/+/zC//7+/v+igvf/RBW+/yEMLf8gDCv/Hwwo/x4LJf8dCyL/HQwg/xsL
+        Hv8bDBz//Pz8//////////////////////////////////z8/P8cDB3/HAsf/x0LIf9mWjD//Pye///+
+        /v/38/v/Uya7/yMLMv8jCzP/JAw1/7SrTf/8/JT//v7+/8q4+f9LFtb/IQwv/yEMLP8gCyr/Hwwn/x4L
+        JP8dCyH/HAsf/xwMHf/8/Pz//////////////////////////////////Pz8/xwMHf8cCx//HQsi/4J4
+        Nv/7/KL//v7+/8+++P9CFbb/Iws0/yQMNv8lDDf/cGFD//z8iv/+/v7/4db6/0wX3f8iDDH/IQwu/yAL
+        LP8fDCj/Hgsk/x0MIv8cDB//HAwd//z8/P/////////////////////////////////8/Pz/HAwe/xwL
+        IP8dCyP/hn43//v8lP/+/v7/xLL5/00X3v8kDDb/JQ03/yUNOP9hUEP/+/yL//7//v/m3fv/TBfd/yIL
+        Mv8iDC7/IQws/yAMKf8fDCX/HQsj/xwLIP8cDB7//Pz8//////////////////////////////////z8
+        /P8cDB//HQwh/x4LI/93bDX/+/11//7+/v/j2fj/VBn7/zYRe/8lDTf/JQ04/2JQQ//7/Iv//v/+/+Xd
+        +v9MF97/Iwsz/yILMP8hDC3/IAwq/x8LJv8eCyP/HAsh/xwMH//8/Pz/////////////////////////
+        /////////Pz8/xwMH/8dCyH/Hgsk/09BL//8/VH//Pzs//7+/f+KYfX/Uxj3/0EUqv87E5j/ZFBM//v8
+        jP/+//7/5d36/0wX3v8jCzP/Igsx/yEMLf8gDCr/Hwwn/x4LI/8dCyH/HAwf//z8/P//////////////
+        ///////////////////8/Pz/HAwf/x0LIf8eCyT/IxAn/+noTf/7/KL//v7+//f1+/+sj/b/mnj3/1sh
+        +v9kUFD/+/yL//7//v/l3fr/TBfe/yMMNP8iCzH/IQwu/yAMK/8fDCf/Hgsj/x0LIf8dDR///Pz8////
+        //////////////////////////////z8/P8cDB//HQsh/x4LJP8fDCf/i4M8//z8Wf/8/N3//v7+//7+
+        /v/+/v3/Xyj5/2RQUP/7/Iz//v/+/+Xd+v9MF97/Iww0/yILMf8gCy7/IAwq/x8MJ/8eCyP/HQsh/x0N
+        H//8/Pz//////////////////////////////////Pz8/xwMH/8dCyH/Hgsk/x8LJv8oFSv/2dZO//z8
+        Z//8/d3//v79//7+/v9fKPj/ZFBQ//v8jP/+//7/5d36/0wX3v8jCzT/Kg5S/z0Unv9IFcX/Iw00/x4L
+        I/8dCyH/HAwf//z8/P/////////////////////////////////8/Pz/HAwf/x0LIf8eCyP/Hwwl/yAM
+        Kv89KjH/29hR//z9Xf/7/Jr/+/zK/1QnxP9jUUz/+/yL//7//v/m3fr/TRfg/1Asmf+khPT/xrP3/2Ao
+        9/8kDTf/Hgsj/xwLIf8cDB///Pz8//////////////////////////////////z8/P8cDB7/HAwg/x0L
+        I/8fCyX/IAwp/yEMLP8rFjD/hnlD/8a/UP/PylT/MRo6/2FQQ//7/Iv//v/+/+bd+v+gf/b/+Pb7//7+
+        /v/+/v7/ZC73/yMNN/8dCyP/HAsg/xwMHv/8/Pz//////////////////////////////////Pz8/xwM
+        Hf8cDB//HQwi/x4LJP8fDCf/IAwr/yEMLv8iCzH/Iwwy/yQMNv8lDDb/YFBB//z8iv/+//7//v39//7+
+        /v////////////7+/v9jLvf/Iw02/x0MIv8cDB//HAwd//z8/P//////////////////////////////
+        ///8/Pz/HAwd/xwLHv8dDCH/Hgsk/x8MJv8gDCr/IQws/yIML/8iCzL/Iws0/yQMNf9gUED//PyJ//7/
+        /v/////////////+///+/v7/+/zc/0opif8fDCr/HQsh/xwLH/8cDB3//Pz8////////////////////
+        //////////////z8/P8bDBz/Gwsd/x0MIP8eCyP/Hwwl/x8MKP8gDCv/IQwt/yIML/8iCzH/Iwsy/2BP
+        Pv/7/Ij//v/+/////////////v79/93csP+UjD//KBYn/x4MI/8cCyD/Gwsd/xsMHP/8/Pz/////////
+        /////////////////////////Pz8/xsMG/8bCxz/HAsg/x0LIv8eCyT/Hwwm/yAMKf8gDCv/IQwt/yIM
+        Lv8iCzD/X088//v8hv/+/v7///////7+/v+2q8v/JhMr/x8MJf8eCyT/HQsi/xwLH/8bCxz/Gwwb//z8
+        /P/////////////////////////////////9/f3/HA0c/xoLHP8bCx7/HQsh/x4LI/8eCyT/Hwsn/yAM
+        Kf8gDCz/IQwt/yELLv9eTzr//P2F//7+/v/+/v7/4NX5/zQWaP8fDCb/Hgsk/x0LI/8dDCH/Gwse/xoL
+        HP8cDhz//f39//////////////////////////////////7+/v8sHiv/Ggsa/xsLHP8cCyD/HQwh/x4L
+        I/8eCyT/Hwwn/yALKf8gCyv/IAwr/11PN//7/IL//v7+//7+/v+NZ/D/IAwv/x4LJP8eCyP/HQwh/xwL
+        H/8bCxz/Ggsa/yweK//+/v7//////////////////////////////////v7+/1JGUf8aChn/Ggsc/xsL
+        Hv8cCyD/HQwi/x4LI/8eCyX/Hwwm/x8MKP8fCyn/XU81//v8gP/+/v3/+/v8/1Yk2/8eDCX/Hgsj/x0M
+        Iv8cCyD/Gwsd/xoKHP8aChn/UkdR//7+/v/////////////////////////////////+/v7/j4mP/xoL
+        GP8aChr/Gwsc/xsLHv8cCyD/HQsi/x4LI/8eCyT/Hwwk/x8LJv9dTzT//PxO//v9Vf/j4VL/IA0w/x0L
+        I/8dCyL/HAsg/xsLHv8bCxz/Ggoa/xoKGf+PiJD//v7+//////////////////////////////////7+
+        /v/f3eD/JBcj/xoKGf8aChv/Gwsc/xsLHv8cCyD/HQsh/x0LIv8eCyP/Hgsk/yUUJf84KSn/OCkp/zUl
+        KP8dDCL/HQsh/xwLIP8bCx7/Gwsc/xoKG/8aChn/JBcj/9/d4P/+/v7/////////////////////////
+        /////////v7+//Lx8/+SjZP/GQsY/xkKGf8aChv/Gwsc/xsLHf8cCyD/HAwg/x0MIf8dCyL/HQsi/x0L
+        Iv8dCyL/HQwh/xwMIP8cCyD/Gwsd/xsLHP8aChv/GgoZ/xoKGP+TjZP/8vHz//7+/v//////////////
+        ///////////////////+/v7/9fT2//Dv8v9zbHT/GQsY/xoLGf8aChr/Ggsc/xsLHf8bCx3/HAsf/xwL
+        IP8cDCD/HAwg/xwLIP8cCx//Gwsd/xsLHf8aCxv/Ggoa/xoKGf8aCxj/dGxz//Dv8v/19Pb//v7+////
+        //////////////////////////////7+/v/39vj/9PP1//Dv8f+noqn/Rz1H/x8RH/8aCxr/Gwsc/xsL
+        HP8bCx3/HAwe/xwMHv8cDB7/HAwe/xsLHf8bCx3/Gwsc/xoLGf8gER7/ST1H/6iiqP/w7/H/9PP1//f2
+        +P/+/v7/////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>抖音弹幕抓取</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DouYinFetch</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
