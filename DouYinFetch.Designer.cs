@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DouYinFetch));
             this.configAllBox = new System.Windows.Forms.GroupBox();
             this.configBox = new System.Windows.Forms.GroupBox();
+            this.WelcomeCheckBox = new System.Windows.Forms.CheckBox();
             this.peopleCheckBox = new System.Windows.Forms.CheckBox();
             this.danmuCheckBox = new System.Windows.Forms.CheckBox();
             this.roomBox = new System.Windows.Forms.GroupBox();
+            this.loginButt = new System.Windows.Forms.Button();
             this.selectLiveButt = new System.Windows.Forms.Button();
             this.liveHallButt = new System.Windows.Forms.Button();
             this.listenButt = new System.Windows.Forms.Button();
@@ -41,41 +43,39 @@
             this.roomUrlText = new System.Windows.Forms.TextBox();
             this.roomUrlLabel = new System.Windows.Forms.Label();
             this.infoBox = new System.Windows.Forms.GroupBox();
+            this.userGroup = new System.Windows.Forms.GroupBox();
+            this.sexText = new System.Windows.Forms.Label();
+            this.sexLab = new System.Windows.Forms.Label();
+            this.followText = new System.Windows.Forms.Label();
+            this.followLab = new System.Windows.Forms.Label();
+            this.userPic = new System.Windows.Forms.PictureBox();
+            this.usernameText = new System.Windows.Forms.Label();
+            this.usernameLab = new System.Windows.Forms.Label();
             this.roomGroup = new System.Windows.Forms.GroupBox();
+            this.avaterPic = new System.Windows.Forms.PictureBox();
             this.roomCountText = new System.Windows.Forms.Label();
             this.roomCountLab = new System.Windows.Forms.Label();
             this.roomNameText = new System.Windows.Forms.Label();
             this.roomNameLab = new System.Windows.Forms.Label();
-            this.roomIdText = new System.Windows.Forms.Label();
-            this.roomLab = new System.Windows.Forms.Label();
             this.nicknameText = new System.Windows.Forms.Label();
             this.nicknameLab = new System.Windows.Forms.Label();
-            this.avaterPic = new System.Windows.Forms.PictureBox();
             this.danmuBox = new System.Windows.Forms.GroupBox();
             this.danmuText = new System.Windows.Forms.TextBox();
             this.peopleBox = new System.Windows.Forms.GroupBox();
             this.peopleText = new System.Windows.Forms.TextBox();
-            this.loginButt = new System.Windows.Forms.Button();
-            this.userGroup = new System.Windows.Forms.GroupBox();
-            this.userPic = new System.Windows.Forms.PictureBox();
-            this.userIdText = new System.Windows.Forms.Label();
-            this.userIdLab = new System.Windows.Forms.Label();
-            this.usernameText = new System.Windows.Forms.Label();
-            this.usernameLab = new System.Windows.Forms.Label();
-            this.followLab = new System.Windows.Forms.Label();
-            this.followText = new System.Windows.Forms.Label();
-            this.sexLab = new System.Windows.Forms.Label();
-            this.sexText = new System.Windows.Forms.Label();
+            this.giftBox = new System.Windows.Forms.GroupBox();
+            this.giftText = new System.Windows.Forms.TextBox();
             this.configAllBox.SuspendLayout();
             this.configBox.SuspendLayout();
             this.roomBox.SuspendLayout();
             this.infoBox.SuspendLayout();
+            this.userGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userPic)).BeginInit();
             this.roomGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avaterPic)).BeginInit();
             this.danmuBox.SuspendLayout();
             this.peopleBox.SuspendLayout();
-            this.userGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userPic)).BeginInit();
+            this.giftBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // configAllBox
@@ -88,11 +88,20 @@
             // 
             // configBox
             // 
+            this.configBox.Controls.Add(this.WelcomeCheckBox);
             this.configBox.Controls.Add(this.peopleCheckBox);
             this.configBox.Controls.Add(this.danmuCheckBox);
             resources.ApplyResources(this.configBox, "configBox");
             this.configBox.Name = "configBox";
             this.configBox.TabStop = false;
+            // 
+            // WelcomeCheckBox
+            // 
+            resources.ApplyResources(this.WelcomeCheckBox, "WelcomeCheckBox");
+            this.WelcomeCheckBox.Checked = true;
+            this.WelcomeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.WelcomeCheckBox.Name = "WelcomeCheckBox";
+            this.WelcomeCheckBox.UseVisualStyleBackColor = true;
             // 
             // peopleCheckBox
             // 
@@ -122,6 +131,13 @@
             resources.ApplyResources(this.roomBox, "roomBox");
             this.roomBox.Name = "roomBox";
             this.roomBox.TabStop = false;
+            // 
+            // loginButt
+            // 
+            resources.ApplyResources(this.loginButt, "loginButt");
+            this.loginButt.Name = "loginButt";
+            this.loginButt.UseVisualStyleBackColor = true;
+            this.loginButt.Click += new System.EventHandler(this.loginButt_Click);
             // 
             // selectLiveButt
             // 
@@ -163,6 +179,7 @@
             // 
             // infoBox
             // 
+            this.infoBox.Controls.Add(this.giftBox);
             this.infoBox.Controls.Add(this.userGroup);
             this.infoBox.Controls.Add(this.roomGroup);
             this.infoBox.Controls.Add(this.danmuBox);
@@ -171,6 +188,56 @@
             this.infoBox.Name = "infoBox";
             this.infoBox.TabStop = false;
             // 
+            // userGroup
+            // 
+            this.userGroup.Controls.Add(this.sexText);
+            this.userGroup.Controls.Add(this.sexLab);
+            this.userGroup.Controls.Add(this.followText);
+            this.userGroup.Controls.Add(this.followLab);
+            this.userGroup.Controls.Add(this.userPic);
+            this.userGroup.Controls.Add(this.usernameText);
+            this.userGroup.Controls.Add(this.usernameLab);
+            resources.ApplyResources(this.userGroup, "userGroup");
+            this.userGroup.Name = "userGroup";
+            this.userGroup.TabStop = false;
+            // 
+            // sexText
+            // 
+            resources.ApplyResources(this.sexText, "sexText");
+            this.sexText.Name = "sexText";
+            // 
+            // sexLab
+            // 
+            resources.ApplyResources(this.sexLab, "sexLab");
+            this.sexLab.Name = "sexLab";
+            // 
+            // followText
+            // 
+            resources.ApplyResources(this.followText, "followText");
+            this.followText.Name = "followText";
+            // 
+            // followLab
+            // 
+            resources.ApplyResources(this.followLab, "followLab");
+            this.followLab.Name = "followLab";
+            // 
+            // userPic
+            // 
+            this.userPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.userPic, "userPic");
+            this.userPic.Name = "userPic";
+            this.userPic.TabStop = false;
+            // 
+            // usernameText
+            // 
+            resources.ApplyResources(this.usernameText, "usernameText");
+            this.usernameText.Name = "usernameText";
+            // 
+            // usernameLab
+            // 
+            resources.ApplyResources(this.usernameLab, "usernameLab");
+            this.usernameLab.Name = "usernameLab";
+            // 
             // roomGroup
             // 
             this.roomGroup.Controls.Add(this.avaterPic);
@@ -178,13 +245,18 @@
             this.roomGroup.Controls.Add(this.roomCountLab);
             this.roomGroup.Controls.Add(this.roomNameText);
             this.roomGroup.Controls.Add(this.roomNameLab);
-            this.roomGroup.Controls.Add(this.roomIdText);
-            this.roomGroup.Controls.Add(this.roomLab);
             this.roomGroup.Controls.Add(this.nicknameText);
             this.roomGroup.Controls.Add(this.nicknameLab);
             resources.ApplyResources(this.roomGroup, "roomGroup");
             this.roomGroup.Name = "roomGroup";
             this.roomGroup.TabStop = false;
+            // 
+            // avaterPic
+            // 
+            this.avaterPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.avaterPic, "avaterPic");
+            this.avaterPic.Name = "avaterPic";
+            this.avaterPic.TabStop = false;
             // 
             // roomCountText
             // 
@@ -208,17 +280,6 @@
             resources.ApplyResources(this.roomNameLab, "roomNameLab");
             this.roomNameLab.Name = "roomNameLab";
             // 
-            // roomIdText
-            // 
-            resources.ApplyResources(this.roomIdText, "roomIdText");
-            this.roomIdText.Name = "roomIdText";
-            this.roomIdText.MouseHover += new System.EventHandler(this.roomIdText_MouseHover);
-            // 
-            // roomLab
-            // 
-            resources.ApplyResources(this.roomLab, "roomLab");
-            this.roomLab.Name = "roomLab";
-            // 
             // nicknameText
             // 
             resources.ApplyResources(this.nicknameText, "nicknameText");
@@ -229,12 +290,6 @@
             // 
             resources.ApplyResources(this.nicknameLab, "nicknameLab");
             this.nicknameLab.Name = "nicknameLab";
-            // 
-            // avaterPic
-            // 
-            resources.ApplyResources(this.avaterPic, "avaterPic");
-            this.avaterPic.Name = "avaterPic";
-            this.avaterPic.TabStop = false;
             // 
             // danmuBox
             // 
@@ -264,73 +319,19 @@
             this.peopleText.HideSelection = false;
             this.peopleText.Name = "peopleText";
             // 
-            // loginButt
+            // giftBox
             // 
-            resources.ApplyResources(this.loginButt, "loginButt");
-            this.loginButt.Name = "loginButt";
-            this.loginButt.UseVisualStyleBackColor = true;
-            this.loginButt.Click += new System.EventHandler(this.loginButt_Click);
+            this.giftBox.Controls.Add(this.giftText);
+            resources.ApplyResources(this.giftBox, "giftBox");
+            this.giftBox.Name = "giftBox";
+            this.giftBox.TabStop = false;
             // 
-            // userGroup
+            // giftText
             // 
-            this.userGroup.Controls.Add(this.sexText);
-            this.userGroup.Controls.Add(this.sexLab);
-            this.userGroup.Controls.Add(this.followText);
-            this.userGroup.Controls.Add(this.followLab);
-            this.userGroup.Controls.Add(this.userPic);
-            this.userGroup.Controls.Add(this.userIdText);
-            this.userGroup.Controls.Add(this.userIdLab);
-            this.userGroup.Controls.Add(this.usernameText);
-            this.userGroup.Controls.Add(this.usernameLab);
-            resources.ApplyResources(this.userGroup, "userGroup");
-            this.userGroup.Name = "userGroup";
-            this.userGroup.TabStop = false;
-            // 
-            // userPic
-            // 
-            resources.ApplyResources(this.userPic, "userPic");
-            this.userPic.Name = "userPic";
-            this.userPic.TabStop = false;
-            // 
-            // userIdText
-            // 
-            resources.ApplyResources(this.userIdText, "userIdText");
-            this.userIdText.Name = "userIdText";
-            // 
-            // userIdLab
-            // 
-            resources.ApplyResources(this.userIdLab, "userIdLab");
-            this.userIdLab.Name = "userIdLab";
-            // 
-            // usernameText
-            // 
-            resources.ApplyResources(this.usernameText, "usernameText");
-            this.usernameText.Name = "usernameText";
-            // 
-            // usernameLab
-            // 
-            resources.ApplyResources(this.usernameLab, "usernameLab");
-            this.usernameLab.Name = "usernameLab";
-            // 
-            // followLab
-            // 
-            resources.ApplyResources(this.followLab, "followLab");
-            this.followLab.Name = "followLab";
-            // 
-            // followText
-            // 
-            resources.ApplyResources(this.followText, "followText");
-            this.followText.Name = "followText";
-            // 
-            // sexLab
-            // 
-            resources.ApplyResources(this.sexLab, "sexLab");
-            this.sexLab.Name = "sexLab";
-            // 
-            // sexText
-            // 
-            resources.ApplyResources(this.sexText, "sexText");
-            this.sexText.Name = "sexText";
+            this.giftText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.giftText, "giftText");
+            this.giftText.HideSelection = false;
+            this.giftText.Name = "giftText";
             // 
             // DouYinFetch
             // 
@@ -349,6 +350,9 @@
             this.roomBox.ResumeLayout(false);
             this.roomBox.PerformLayout();
             this.infoBox.ResumeLayout(false);
+            this.userGroup.ResumeLayout(false);
+            this.userGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userPic)).EndInit();
             this.roomGroup.ResumeLayout(false);
             this.roomGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avaterPic)).EndInit();
@@ -356,9 +360,8 @@
             this.danmuBox.PerformLayout();
             this.peopleBox.ResumeLayout(false);
             this.peopleBox.PerformLayout();
-            this.userGroup.ResumeLayout(false);
-            this.userGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userPic)).EndInit();
+            this.giftBox.ResumeLayout(false);
+            this.giftBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -384,9 +387,6 @@
         private System.Windows.Forms.GroupBox roomGroup;
         private System.Windows.Forms.Label roomCountLab;
         private System.Windows.Forms.Label roomNameText;
-        private System.Windows.Forms.Label roomNameLab;
-        private System.Windows.Forms.Label roomIdText;
-        private System.Windows.Forms.Label roomLab;
         private System.Windows.Forms.Label nicknameText;
         private System.Windows.Forms.Label nicknameLab;
         private System.Windows.Forms.PictureBox avaterPic;
@@ -394,14 +394,16 @@
         private System.Windows.Forms.Button loginButt;
         private System.Windows.Forms.GroupBox userGroup;
         private System.Windows.Forms.PictureBox userPic;
-        private System.Windows.Forms.Label userIdText;
-        private System.Windows.Forms.Label userIdLab;
         private System.Windows.Forms.Label usernameText;
         private System.Windows.Forms.Label usernameLab;
         private System.Windows.Forms.Label sexText;
         private System.Windows.Forms.Label sexLab;
         private System.Windows.Forms.Label followText;
         private System.Windows.Forms.Label followLab;
+        private System.Windows.Forms.Label roomNameLab;
+        private System.Windows.Forms.CheckBox WelcomeCheckBox;
+        private System.Windows.Forms.GroupBox giftBox;
+        public System.Windows.Forms.TextBox giftText;
     }
 }
 

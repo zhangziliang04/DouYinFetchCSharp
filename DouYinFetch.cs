@@ -4,9 +4,7 @@ using HtmlAgilityPack;
 using Newtonsoft.Json.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.DevTools.V108.Network;
-using OpenQA.Selenium.DevTools.V109.Network;
-using OpenQA.Selenium.DevTools.V110.Network;
+using Proto;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,6 +15,7 @@ using System.Net.WebSockets;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DouYinFetch
@@ -28,6 +27,8 @@ namespace DouYinFetch
         public static LiveHall liveHall = null;
 
         WebSocketLink webSocket = null;
+
+        string token = null;
 
         public DouYinFetch()
         {
@@ -47,7 +48,6 @@ namespace DouYinFetch
             {
                 this.nicknameText.Text = (string)roomInfoDic["nickName"];
                 this.roomNameText.Text = (string)roomInfoDic["title"];
-                this.roomIdText.Text = (string)roomInfoDic["roomId"];
                 this.roomCountText.Text = (string)roomInfoDic["displayValue"];
                 this.avaterPic.ImageLocation = (string)roomInfoDic["avater"];
             }
@@ -163,31 +163,34 @@ namespace DouYinFetch
 
         private void listenButt_Click(object sender, EventArgs e)
         {
-            string roomId = (string)roomInfoDic["roomId"];
-            string userUniqueId = (string)roomInfoDic["userUniqueId"];
-            string ttwid = (string)roomInfoDic["ttwid"];
-            //拼接wss链接
-            Dictionary<string, string> wssDic = this.getWssUrl(ttwid, roomId);
-            string wsUrl = wssDic["url"] + "?";
-            string internalExt = wssDic["internalExt"];
-            string req = "app_name=douyin_web&version_code=180800&webcast_sdk_version=1.3.0&update_version_code=1.3.0&compress=gzip&internal_ext=" + internalExt + "&cursor=d-1_u-1_h-1_t-1678883677711_r-1&host=https://live.douyin.com&aid=6383&live_id=1&did_rule=3&debug=false&maxCacheMessageNumber=20&endpoint=live_pc&support_wrds=1&im_path=/webcast/im/fetch/&user_unique_id=" + userUniqueId + "&device_platform=web&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=zh-CN&browser_platform=Win32&browser_name=Mozilla&browser_online=true&tz_name=Asia/Shanghai&identity=audience&room_id=" + roomId + "&heartbeatDuration=0";
-            //验签,先对这串数据进行md5加密后在走算法
-            string sigStr = "live_id=1,aid=6383,version_code=180800,webcast_sdk_version=1.3.0,room_id=" + roomId + ",sub_room_id=,sub_channel_id=,did_rule=3,user_unique_id="
-                    + userUniqueId + ",device_platform=web,device_type=,ac=,identity=audience";
-            //md5加密
-            MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] output = md5.ComputeHash(Encoding.Default.GetBytes(sigStr));
-            sigStr = BitConverter.ToString(output).Replace("-", "").ToLower();
-            string signature = this.getSignature("https://live.douyin.com", sigStr);
-            req += "&signature=" + signature;
-            string realUrl = wsUrl + req;
-            Dictionary<string, string> dic = new Dictionary<string, string>();
-            //map.Add("Connection", "Upgrade");
-            //map.Add("Upgrade", "websocket");
-            dic.Add("Cookie", "ttwid=" + ttwid);
-            webSocket = new WebSocketLink(realUrl, ttwid);
-            webSocket.ConnectAuthReceive();
             listenButt.Enabled = false;
+            Task task = Task.Run(() =>
+            {
+                string roomId = (string)roomInfoDic["roomId"];
+                string userUniqueId = (string)roomInfoDic["userUniqueId"];
+                string ttwid = (string)roomInfoDic["ttwid"];
+                //拼接wss链接
+                Dictionary<string, string> wssDic = this.getWssUrl(ttwid, roomId);
+                string wsUrl = wssDic["url"] + "?";
+                string internalExt = wssDic["internalExt"];
+                string req = "app_name=douyin_web&version_code=180800&webcast_sdk_version=1.3.0&update_version_code=1.3.0&compress=gzip&internal_ext=" + internalExt + "&cursor=d-1_u-1_h-1_t-1678883677711_r-1&host=https://live.douyin.com&aid=6383&live_id=1&did_rule=3&debug=false&maxCacheMessageNumber=20&endpoint=live_pc&support_wrds=1&im_path=/webcast/im/fetch/&user_unique_id=" + userUniqueId + "&device_platform=web&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=zh-CN&browser_platform=Win32&browser_name=Mozilla&browser_online=true&tz_name=Asia/Shanghai&identity=audience&room_id=" + roomId + "&heartbeatDuration=0";
+                //验签,先对这串数据进行md5加密后在走算法
+                string sigStr = "live_id=1,aid=6383,version_code=180800,webcast_sdk_version=1.3.0,room_id=" + roomId + ",sub_room_id=,sub_channel_id=,did_rule=3,user_unique_id="
+                        + userUniqueId + ",device_platform=web,device_type=,ac=,identity=audience";
+                //md5加密
+                MD5 md5 = new MD5CryptoServiceProvider();
+                byte[] output = md5.ComputeHash(Encoding.Default.GetBytes(sigStr));
+                sigStr = BitConverter.ToString(output).Replace("-", "").ToLower();
+                string signature = this.getSignature("https://live.douyin.com", sigStr);
+                req += "&signature=" + signature;
+                string realUrl = wsUrl + req;
+                Dictionary<string, string> dic = new Dictionary<string, string>();
+                //map.Add("Connection", "Upgrade");
+                //map.Add("Upgrade", "websocket");
+                dic.Add("Cookie", "ttwid=" + ttwid);
+                webSocket = new WebSocketLink(realUrl, ttwid);
+                webSocket.ConnectAuthReceive();
+            });
         }
 
 
@@ -364,7 +367,6 @@ namespace DouYinFetch
             roomIdTip.AutoPopDelay = 3000;
             //是否球形展示
             roomIdTip.IsBalloon = true;
-            roomIdTip.SetToolTip(this.roomIdText, this.roomIdText.Text);
         }
 
         private void nicknameText_MouseHover(object sender, EventArgs e)
@@ -387,9 +389,9 @@ namespace DouYinFetch
 
         private void loginButt_Click(object sender, EventArgs e)
         {
+            //sessionid_ss,sessionid,sid_tt,sid_guard是登陆的信息
             MessageBox.Show("请登录抖音");
             IWebDriver webDriver = null;
-            string mes = null;
             try
             {
                 ChromeOptions options = new ChromeOptions();
@@ -415,7 +417,20 @@ namespace DouYinFetch
                     {
                         webDriver = targetLocator.Window(handles.Last());
                         //获取cookie去进行登录
-                        ReadOnlyCollection<OpenQA.Selenium.Cookie> cookies =  webDriver.Manage().Cookies.AllCookies;
+                        ReadOnlyCollection<OpenQA.Selenium.Cookie> cookies = webDriver.Manage().Cookies.AllCookies;
+                        OpenQA.Selenium.Cookie[] cookiesArr = cookies.ToArray();
+                        for (var i = 0; i < cookiesArr.Length; i++)
+                        {
+                            if (cookiesArr[i].Name == "sessionid")
+                            {
+                                token = cookiesArr[i].Value;
+                                break;
+                            }
+                        }
+                        if (token != null) {
+                            GetUserInfo(token);
+                            break;
+                        }
                     }
 
                 }
@@ -428,9 +443,66 @@ namespace DouYinFetch
             {
                 webDriver.Close();
                 webDriver.Quit();
-                MessageBox.Show("已登录:" + mes);
-                initButt_Click(initButt, new EventArgs());
             }
         }
+
+        private void GetUserInfo(string sessionid)
+        {
+            string url = "https://live.douyin.com/webcast/user/me/?aid=6383";
+            HttpWebRequest request ;
+            HttpWebResponse response ;
+            try
+            {
+                request = (HttpWebRequest)WebRequest.Create(url);
+                CookieContainer cookieContainer = new CookieContainer();
+                System.Net.Cookie sessionidCookie = new System.Net.Cookie
+                {
+                    Name = "sessionid",
+                    Value = sessionid
+                };
+                cookieContainer.Add(new Uri(url), sessionidCookie);
+                request.CookieContainer = cookieContainer;
+                request.Method = "GET";
+                request.UserAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11";
+                //获取返回结果
+                response = (HttpWebResponse)request.GetResponse();
+                StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
+                string result = reader.ReadToEnd();
+                result = WebUtility.UrlDecode(result);
+                JObject UserInfoObj = JObject.Parse(result);
+                int code = (int)UserInfoObj?["status_code"];
+                if (code != 0)
+                {
+                    MessageBox.Show("登陆失败,请重新登录");
+                }
+                else
+                {
+                    string NickName = (string)UserInfoObj?["data"]?["nickname"];
+                    string Avater = (string)UserInfoObj?["data"]?["avatar_thumb"]?["url_list"]?[0];
+                    string FollererCount = (string)UserInfoObj?["data"]?["follow_info"]?["follower_count_str"];
+                    int sex = (int)UserInfoObj?["data"]?["gender"];
+                    frame.usernameText.Text = NickName;
+                    frame.userPic.ImageLocation = Avater;
+                    frame.followText.Text = FollererCount;
+                    if (sex == 0)
+                    {
+                        frame.sexText.Text = "女";
+                    }
+                    else if (sex == 1)
+                    {
+                        frame.sexText.Text = "男";
+                    }
+                    else {
+                        frame.sexText.Text = "未知";
+                    }
+                }
+            }
+            catch (Exception exce)
+            {
+
+
+            }
+        }
+
     }
 }

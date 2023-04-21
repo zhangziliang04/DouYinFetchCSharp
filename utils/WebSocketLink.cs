@@ -9,6 +9,8 @@ using System.Linq;
 using System.Net.WebSockets;
 using System.Threading;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 /// WebSocket链接
 public class WebSocketLink
@@ -88,17 +90,52 @@ public class WebSocketLink
                     ChatMessage chatMessage = ChatMessage.Parser.ParseFrom(message.Payload);
                     String content = chatMessage.Content;
                     User user = chatMessage.User;
-                    DouYinFetch.DouYinFetch.frame.danmuText.AppendText("[" + user.Nickname + "]:" + content + "\r\n");
+                    AppendText(DouYinFetch.DouYinFetch.frame.danmuText, "[" + user.Nickname + "]:" + content + "\r\n");
                     break;
                 case MessageEnum.WebcastMemberMessage:
                     MemberMessage memberMessage = MemberMessage.Parser.ParseFrom(message.Payload);
                     String nickname = memberMessage.User.Nickname;
-                    DouYinFetch.DouYinFetch.frame.roomCountText.Text =  memberMessage.MemberCount.ToString();
-                    DouYinFetch.DouYinFetch.frame.peopleText.AppendText(nickname + " 来了" + "\r\n");
+                    UpdateText(DouYinFetch.DouYinFetch.frame.roomCountText, memberMessage.MemberCount.ToString());
+                    AppendText(DouYinFetch.DouYinFetch.frame.peopleText, nickname + " 来了" + "\r\n");
                     break;
                 default:
                     break;
             }
+        }
+    }
+
+
+    /// <summary>
+    /// 多线程之间使用委托修改标签文本
+    /// </summary>
+    /// <param name="label">标签对象</param>
+    /// <param name="text">内容</param>
+    private void UpdateText(Label label, string text)
+    {
+        if (label.InvokeRequired)
+        {
+            label.Invoke(new Action<System.Windows.Forms.Label, string>(UpdateText), label, text);
+        }
+        else
+        {
+            label.Text =text;
+        }
+    }
+
+    /// <summary>
+    /// 多线程之间使用委托追加文本
+    /// </summary>
+    /// <param name="textBox">文本框对象</param>
+    /// <param name="text">内容</param>
+    private void AppendText(System.Windows.Forms.TextBox textBox,string text)
+    {
+        if (textBox.InvokeRequired)
+        {
+            textBox.Invoke(new Action<System.Windows.Forms.TextBox,string>(AppendText), textBox,text);
+        }
+        else
+        {
+            textBox.AppendText(text);
         }
     }
 
@@ -136,8 +173,8 @@ public class WebSocketLink
     /// </summary>
     public async void ConnectAuthReceive()
     {
-        try
-        {
+        //try
+        //{
             await client.ConnectAsync(wssUrl, token);//连接
                                                      //全部消息容器
             List<byte> bs = new List<byte>();
@@ -165,11 +202,11 @@ public class WebSocketLink
                 //继续监听Socket信息
                 result = await client.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
             }
-        }
-        catch (Exception ex)
-        {
-            WebSocketError(ex);
-        }
+        //}
+        //catch (Exception ex)
+        //{
+        //    WebSocketError(ex);
+        //}
     }
 
     /// <summary>

@@ -117,29 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="configAllBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="configBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="peopleCheckBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WelcomeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="WelcomeCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WelcomeCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="WelcomeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 76</value>
+  </data>
+  <data name="WelcomeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 16</value>
+  </data>
+  <data name="WelcomeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="WelcomeCheckBox.Text" xml:space="preserve">
+    <value>欢迎进入直播间</value>
+  </data>
+  <data name="&gt;&gt;WelcomeCheckBox.Name" xml:space="preserve">
+    <value>WelcomeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;WelcomeCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WelcomeCheckBox.Parent" xml:space="preserve">
+    <value>configBox</value>
+  </data>
+  <data name="&gt;&gt;WelcomeCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="peopleCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="peopleCheckBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="peopleCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="peopleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 55</value>
+    <value>21, 53</value>
   </data>
   <data name="peopleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 16</value>
@@ -160,11 +184,8 @@
     <value>configBox</value>
   </data>
   <data name="&gt;&gt;peopleCheckBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <metadata name="danmuCheckBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="danmuCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -193,7 +214,7 @@
     <value>configBox</value>
   </data>
   <data name="&gt;&gt;danmuCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="configBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -222,12 +243,6 @@
   <data name="&gt;&gt;configBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="roomBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="loginButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="loginButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -255,9 +270,6 @@
   <data name="&gt;&gt;loginButt.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="selectLiveButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="selectLiveButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -285,9 +297,6 @@
   <data name="&gt;&gt;selectLiveButt.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="liveHallButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="liveHallButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -315,9 +324,6 @@
   <data name="&gt;&gt;liveHallButt.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="listenButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="listenButt.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -348,9 +354,6 @@
   <data name="&gt;&gt;listenButt.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="initButt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="initButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -378,9 +381,6 @@
   <data name="&gt;&gt;initButt.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="roomUrlText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="roomUrlText.Location" type="System.Drawing.Point, System.Drawing">
     <value>65, 23</value>
   </data>
@@ -402,9 +402,6 @@
   <data name="&gt;&gt;roomUrlText.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="roomUrlLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="roomUrlLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -483,15 +480,57 @@
   <data name="&gt;&gt;configAllBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="infoBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="giftText.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="giftText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 22</value>
+  </data>
+  <data name="giftText.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="userGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="sexText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  </data>
+  <data name="giftText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 175</value>
+  </data>
+  <data name="giftText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;giftText.Name" xml:space="preserve">
+    <value>giftText</value>
+  </data>
+  <data name="&gt;&gt;giftText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;giftText.Parent" xml:space="preserve">
+    <value>giftBox</value>
+  </data>
+  <data name="&gt;&gt;giftText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="giftBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 209</value>
+  </data>
+  <data name="giftBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 205</value>
+  </data>
+  <data name="giftBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="giftBox.Text" xml:space="preserve">
+    <value>礼物列表</value>
+  </data>
+  <data name="&gt;&gt;giftBox.Name" xml:space="preserve">
+    <value>giftBox</value>
+  </data>
+  <data name="&gt;&gt;giftBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;giftBox.Parent" xml:space="preserve">
+    <value>infoBox</value>
+  </data>
+  <data name="&gt;&gt;giftBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="sexText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -499,7 +538,7 @@
     <value>NoControl</value>
   </data>
   <data name="sexText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 178</value>
+    <value>49, 165</value>
   </data>
   <data name="sexText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -525,9 +564,6 @@
   <data name="&gt;&gt;sexText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="sexLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="sexLab.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -535,7 +571,7 @@
     <value>NoControl</value>
   </data>
   <data name="sexLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 178</value>
+    <value>14, 165</value>
   </data>
   <data name="sexLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -561,9 +597,6 @@
   <data name="&gt;&gt;sexLab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="followText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="followText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -571,7 +604,7 @@
     <value>NoControl</value>
   </data>
   <data name="followText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 158</value>
+    <value>61, 141</value>
   </data>
   <data name="followText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -597,9 +630,6 @@
   <data name="&gt;&gt;followText.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="followLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="followLab.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -607,7 +637,7 @@
     <value>NoControl</value>
   </data>
   <data name="followLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 158</value>
+    <value>14, 141</value>
   </data>
   <data name="followLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -633,14 +663,11 @@
   <data name="&gt;&gt;followLab.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="userPic.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="userPic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="userPic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 24</value>
+    <value>91, 24</value>
   </data>
   <data name="userPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -666,81 +693,6 @@
   <data name="&gt;&gt;userPic.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="userIdText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="userIdText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="userIdText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="userIdText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 122</value>
-  </data>
-  <data name="userIdText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="userIdText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="userIdText.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="userIdText.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;userIdText.Name" xml:space="preserve">
-    <value>userIdText</value>
-  </data>
-  <data name="&gt;&gt;userIdText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userIdText.Parent" xml:space="preserve">
-    <value>userGroup</value>
-  </data>
-  <data name="&gt;&gt;userIdText.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="userIdLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="userIdLab.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="userIdLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="userIdLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 122</value>
-  </data>
-  <data name="userIdLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="userIdLab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="userIdLab.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="userIdLab.Text" xml:space="preserve">
-    <value>用户id:</value>
-  </data>
-  <data name="&gt;&gt;userIdLab.Name" xml:space="preserve">
-    <value>userIdLab</value>
-  </data>
-  <data name="&gt;&gt;userIdLab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userIdLab.Parent" xml:space="preserve">
-    <value>userGroup</value>
-  </data>
-  <data name="&gt;&gt;userIdLab.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="usernameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="usernameText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -748,7 +700,7 @@
     <value>NoControl</value>
   </data>
   <data name="usernameText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 138</value>
+    <value>72, 117</value>
   </data>
   <data name="usernameText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -772,11 +724,8 @@
     <value>userGroup</value>
   </data>
   <data name="&gt;&gt;usernameText.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
-  <metadata name="usernameLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="usernameLab.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -784,7 +733,7 @@
     <value>NoControl</value>
   </data>
   <data name="usernameLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 138</value>
+    <value>14, 117</value>
   </data>
   <data name="usernameLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -808,13 +757,13 @@
     <value>userGroup</value>
   </data>
   <data name="&gt;&gt;usernameLab.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="userGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 24</value>
+    <value>573, 206</value>
   </data>
   <data name="userGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 202</value>
+    <value>275, 208</value>
   </data>
   <data name="userGroup.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -832,19 +781,13 @@
     <value>infoBox</value>
   </data>
   <data name="&gt;&gt;userGroup.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <metadata name="roomGroup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="avaterPic.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="avaterPic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="avaterPic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 24</value>
+    <value>93, 24</value>
   </data>
   <data name="avaterPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -870,9 +813,6 @@
   <data name="&gt;&gt;avaterPic.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="roomCountText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="roomCountText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -880,7 +820,7 @@
     <value>NoControl</value>
   </data>
   <data name="roomCountText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 178</value>
+    <value>91, 153</value>
   </data>
   <data name="roomCountText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -906,9 +846,6 @@
   <data name="&gt;&gt;roomCountText.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="roomCountLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="roomCountLab.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -916,7 +853,7 @@
     <value>NoControl</value>
   </data>
   <data name="roomCountLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 178</value>
+    <value>14, 153</value>
   </data>
   <data name="roomCountLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -942,9 +879,6 @@
   <data name="&gt;&gt;roomCountLab.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="roomNameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="roomNameText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -952,7 +886,7 @@
     <value>NoControl</value>
   </data>
   <data name="roomNameText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 138</value>
+    <value>77, 121</value>
   </data>
   <data name="roomNameText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -978,9 +912,6 @@
   <data name="&gt;&gt;roomNameText.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="roomNameLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="roomNameLab.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -988,7 +919,7 @@
     <value>NoControl</value>
   </data>
   <data name="roomNameLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 138</value>
+    <value>14, 121</value>
   </data>
   <data name="roomNameLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1014,81 +945,6 @@
   <data name="&gt;&gt;roomNameLab.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="roomIdText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="roomIdText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="roomIdText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="roomIdText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 118</value>
-  </data>
-  <data name="roomIdText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="roomIdText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="roomIdText.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="roomIdText.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;roomIdText.Name" xml:space="preserve">
-    <value>roomIdText</value>
-  </data>
-  <data name="&gt;&gt;roomIdText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;roomIdText.Parent" xml:space="preserve">
-    <value>roomGroup</value>
-  </data>
-  <data name="&gt;&gt;roomIdText.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="roomLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="roomLab.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="roomLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="roomLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 118</value>
-  </data>
-  <data name="roomLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="roomLab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="roomLab.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="roomLab.Text" xml:space="preserve">
-    <value>房间Id:</value>
-  </data>
-  <data name="&gt;&gt;roomLab.Name" xml:space="preserve">
-    <value>roomLab</value>
-  </data>
-  <data name="&gt;&gt;roomLab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;roomLab.Parent" xml:space="preserve">
-    <value>roomGroup</value>
-  </data>
-  <data name="&gt;&gt;roomLab.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="nicknameText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="nicknameText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1096,7 +952,7 @@
     <value>NoControl</value>
   </data>
   <data name="nicknameText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 158</value>
+    <value>77, 137</value>
   </data>
   <data name="nicknameText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1120,11 +976,8 @@
     <value>roomGroup</value>
   </data>
   <data name="&gt;&gt;nicknameText.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
-  <metadata name="nicknameLab.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="nicknameLab.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1132,7 +985,7 @@
     <value>NoControl</value>
   </data>
   <data name="nicknameLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 158</value>
+    <value>14, 137</value>
   </data>
   <data name="nicknameLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1156,13 +1009,13 @@
     <value>roomGroup</value>
   </data>
   <data name="&gt;&gt;nicknameLab.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="roomGroup.Location" type="System.Drawing.Point, System.Drawing">
     <value>573, 24</value>
   </data>
   <data name="roomGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 202</value>
+    <value>275, 176</value>
   </data>
   <data name="roomGroup.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1180,14 +1033,8 @@
     <value>infoBox</value>
   </data>
   <data name="&gt;&gt;roomGroup.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <metadata name="danmuBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="danmuText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="danmuText.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -1237,14 +1084,8 @@
     <value>infoBox</value>
   </data>
   <data name="&gt;&gt;danmuBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
-  <metadata name="peopleBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="peopleText.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="peopleText.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -1255,7 +1096,7 @@
     <value>True</value>
   </data>
   <data name="peopleText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 360</value>
+    <value>256, 141</value>
   </data>
   <data name="peopleText.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1276,7 +1117,7 @@
     <value>6, 24</value>
   </data>
   <data name="peopleBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 390</value>
+    <value>272, 176</value>
   </data>
   <data name="peopleBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1294,7 +1135,7 @@
     <value>infoBox</value>
   </data>
   <data name="&gt;&gt;peopleBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="infoBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 3</value>
@@ -1321,9 +1162,6 @@
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
