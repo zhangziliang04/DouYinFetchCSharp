@@ -1,5 +1,6 @@
 ﻿
 using DouYinFetch.subForm;
+using DouYinFetch.utils;
 using HtmlAgilityPack;
 using Newtonsoft.Json.Linq;
 using OpenQA.Selenium;
@@ -28,12 +29,28 @@ namespace DouYinFetch
 
         WebSocketLink webSocket = null;
 
-        string token = null;
+        public static string token = null;
 
         public DouYinFetch()
         {
             frame = this;
             InitializeComponent();
+            //初始化配置文件信息
+            InitConfig();
+        }
+
+        private void InitConfig()
+        {
+            ConfigProperties.CreateConfigINI();
+            string token = ConfigProperties.GetINIFileString("config", "token", null, ConfigProperties.strPath);
+            danmuCheckBox.Checked =  ConfigProperties.GetINIFileString("comp", "danmuCB", "true", ConfigProperties.strPath) == "true"?true:false;
+            peopleCheckBox.Checked = ConfigProperties.GetINIFileString("comp", "peopleCB", "true", ConfigProperties.strPath) == "true" ? true : false;
+            WelcomeCheckBox.Checked = ConfigProperties.GetINIFileString("comp", "welcomeCB", "true", ConfigProperties.strPath) == "true" ? true : false;
+            tokenText.Text = token;
+            if(!string.IsNullOrEmpty(token))
+            {
+                GetUserInfo(token);
+            }
         }
 
         public Dictionary<string, object> roomInfoDic = null;
@@ -64,9 +81,12 @@ namespace DouYinFetch
             roomInfoDic = fetchRoomId(roomUrl);
             if (null != roomInfoDic && null != roomInfoDic["roomId"] && null != roomInfoDic["ttwid"])
             {
-                this.listenButt.Enabled = true;
-                this.configBox.Enabled = true;
-                this.listenButt.Enabled = true;
+                listenButt.Enabled = true;
+                configBox.Enabled = true;
+                listenButt.Enabled = true;
+                danmuCheckBox.Enabled = true;
+                peopleCheckBox.Enabled = true;
+                WelcomeCheckBox.Enabled = true;
                 InitForm(roomInfoDic);
                 if (null != webSocket)
                 {
@@ -424,6 +444,10 @@ namespace DouYinFetch
                             if (cookiesArr[i].Name == "sessionid")
                             {
                                 token = cookiesArr[i].Value;
+                                tokenText.Text = token;
+                                //保存信息
+                                ConfigProperties.CreateConfigINI();
+                                ConfigProperties.WritePrivateProfileString("Config", "token", token, ConfigProperties.strPath);
                                 break;
                             }
                         }
@@ -474,6 +498,8 @@ namespace DouYinFetch
                 if (code != 0)
                 {
                     MessageBox.Show("登陆失败,请重新登录");
+                    ConfigProperties.CreateConfigINI();
+                    ConfigProperties.WritePrivateProfileString("config", "token", "", ConfigProperties.strPath);
                 }
                 else
                 {
@@ -504,5 +530,31 @@ namespace DouYinFetch
             }
         }
 
+        private void WelcomeCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            ConfigProperties.CreateConfigINI();
+            ConfigProperties.WritePrivateProfileString("comp", "welcomeCB", WelcomeCheckBox.Checked?"true":"false", ConfigProperties.strPath);
+        }
+
+        private void WelcomeCheckBox_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip WelcomeTip = new ToolTip();
+            WelcomeTip.AutoPopDelay = 3000;
+            //是否球形展示
+            WelcomeTip.IsBalloon = true;
+            WelcomeTip.SetToolTip(this.WelcomeCheckBox, "对进入直播间的用户进行欢迎");
+        }
+
+        private void danmuCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            ConfigProperties.CreateConfigINI();
+            ConfigProperties.WritePrivateProfileString("comp","danmuCB",danmuCheckBox.Checked ? "true" : "false", ConfigProperties.strPath);
+        }
+
+        private void peopleCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            ConfigProperties.CreateConfigINI();
+            ConfigProperties.WritePrivateProfileString("comp", "peopleCB", peopleCheckBox.Checked ? "true" : "false", ConfigProperties.strPath);
+        }
     }
 }

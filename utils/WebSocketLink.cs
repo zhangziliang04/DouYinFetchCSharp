@@ -9,8 +9,6 @@ using System.Linq;
 using System.Net.WebSockets;
 using System.Threading;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 /// WebSocket链接
 public class WebSocketLink
@@ -83,20 +81,32 @@ public class WebSocketLink
     {
         String method = message.Method;
         MessageEnum messageEnum;
-        if (Enum.TryParse(method, out messageEnum)) {
+        if (Enum.TryParse(method, out messageEnum))
+        {
             switch (messageEnum)
             {
                 case MessageEnum.WebcastChatMessage:
-                    ChatMessage chatMessage = ChatMessage.Parser.ParseFrom(message.Payload);
-                    String content = chatMessage.Content;
-                    User user = chatMessage.User;
-                    AppendText(DouYinFetch.DouYinFetch.frame.danmuText, "[" + user.Nickname + "]:" + content + "\r\n");
+                    if (DouYinFetch.DouYinFetch.frame.danmuCheckBox.Checked) {
+                        if (DouYinFetch.DouYinFetch.frame.WelcomeCheckBox.Checked)
+                        {
+                            if (DouYinFetch.DouYinFetch.token == null) {
+                                UpdateCheckBox(DouYinFetch.DouYinFetch.frame.WelcomeCheckBox, false);
+                            }
+                        }
+                        ChatMessage chatMessage = ChatMessage.Parser.ParseFrom(message.Payload);
+                        String content = chatMessage.Content;
+                        User user = chatMessage.User;
+                        AppendText(DouYinFetch.DouYinFetch.frame.danmuText, "[" + user.Nickname + "]:" + content + "\r\n");
+                    }
                     break;
                 case MessageEnum.WebcastMemberMessage:
-                    MemberMessage memberMessage = MemberMessage.Parser.ParseFrom(message.Payload);
-                    String nickname = memberMessage.User.Nickname;
-                    UpdateText(DouYinFetch.DouYinFetch.frame.roomCountText, memberMessage.MemberCount.ToString());
-                    AppendText(DouYinFetch.DouYinFetch.frame.peopleText, nickname + " 来了" + "\r\n");
+                    if (DouYinFetch.DouYinFetch.frame.peopleCheckBox.Checked) {
+                        MemberMessage memberMessage = MemberMessage.Parser.ParseFrom(message.Payload);
+                        //anchorDisplayText.piecesList[0].userValue.user.payGrade.level
+                        String nickname = memberMessage.User.Nickname;
+                        UpdateText(DouYinFetch.DouYinFetch.frame.roomCountText, memberMessage.MemberCount.ToString());
+                        AppendText(DouYinFetch.DouYinFetch.frame.peopleText, nickname + " 来了" + "\r\n");
+                    }
                     break;
                 default:
                     break;
@@ -104,6 +114,22 @@ public class WebSocketLink
         }
     }
 
+    /// <summary>
+    /// 多线程之间使用委托修改选择框选中值
+    /// </summary>
+    /// <param name="check">选择框对象</param>
+    /// <param name="flag">是否选中</param>
+    private void UpdateCheckBox(CheckBox check, bool flag)
+    {
+        if (check.InvokeRequired)
+        {
+            check.Invoke(new Action<CheckBox, bool>(UpdateCheckBox), check, flag);
+        }
+        else
+        {
+            check.Checked = flag;
+        }
+    }
 
     /// <summary>
     /// 多线程之间使用委托修改标签文本
@@ -118,7 +144,7 @@ public class WebSocketLink
         }
         else
         {
-            label.Text =text;
+            label.Text = text;
         }
     }
 
@@ -127,11 +153,11 @@ public class WebSocketLink
     /// </summary>
     /// <param name="textBox">文本框对象</param>
     /// <param name="text">内容</param>
-    private void AppendText(System.Windows.Forms.TextBox textBox,string text)
+    private void AppendText(System.Windows.Forms.TextBox textBox, string text)
     {
         if (textBox.InvokeRequired)
         {
-            textBox.Invoke(new Action<System.Windows.Forms.TextBox,string>(AppendText), textBox,text);
+            textBox.Invoke(new Action<System.Windows.Forms.TextBox, string>(AppendText), textBox, text);
         }
         else
         {
@@ -175,33 +201,33 @@ public class WebSocketLink
     {
         //try
         //{
-            await client.ConnectAsync(wssUrl, token);//连接
-                                                     //全部消息容器
-            List<byte> bs = new List<byte>();
-            //缓冲区
-            var buffer = new byte[1024 * 4];
-            //监听Socket信息
-            WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-            //是否关闭
-            while (null !=client && client.State ==WebSocketState.Open )
+        await client.ConnectAsync(wssUrl, token);//连接
+                                                 //全部消息容器
+        List<byte> bs = new List<byte>();
+        //缓冲区
+        var buffer = new byte[1024 * 4];
+        //监听Socket信息
+        WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+        //是否关闭
+        while (null != client && client.State == WebSocketState.Open)
+        {
+            //二进制消息
+            if (result.MessageType == WebSocketMessageType.Binary)
             {
-                //二进制消息
-                if (result.MessageType == WebSocketMessageType.Binary)
-                {
-                    bs.AddRange(buffer.Take(result.Count));
+                bs.AddRange(buffer.Take(result.Count));
 
-                    //消息是否已接收完全
-                    if (result.EndOfMessage)
-                    {
-                        //解析数据
-                        ParseResult(bs.ToArray());
-                        //清空消息容器
-                        bs = new List<byte>();
-                    }
+                //消息是否已接收完全
+                if (result.EndOfMessage)
+                {
+                    //解析数据
+                    ParseResult(bs.ToArray());
+                    //清空消息容器
+                    bs = new List<byte>();
                 }
-                //继续监听Socket信息
-                result = await client.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
             }
+            //继续监听Socket信息
+            result = await client.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+        }
         //}
         //catch (Exception ex)
         //{

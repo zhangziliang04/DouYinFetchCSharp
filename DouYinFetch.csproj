@@ -391,6 +391,13 @@
     <Compile Include="subForm\LiveHall.Designer.cs">
       <DependentUpon>LiveHall.cs</DependentUpon>
     </Compile>
+    <Compile Include="subForm\WelcomConfigFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm\WelcomConfigFrame.Designer.cs">
+      <DependentUpon>WelcomConfigFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils\ConfigProperties.cs" />
     <Compile Include="utils\WebSocketLink.cs" />
     <EmbeddedResource Include="DouYinFetch.resx">
       <DependentUpon>DouYinFetch.cs</DependentUpon>
@@ -409,6 +416,9 @@
     </Compile>
     <EmbeddedResource Include="subForm\LiveHall.resx">
       <DependentUpon>LiveHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm\WelcomConfigFrame.resx">
+      <DependentUpon>WelcomConfigFrame.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DouYinFetch_TemporaryKey.pfx" />
     <None Include="packages.config" />
