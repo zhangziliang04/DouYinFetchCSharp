@@ -11,6 +11,61 @@ message ChatMessage {
   string chatBy = 20;
 }
 
+message AvatarThumb{
+}
+
+message AvatarMedium{
+
+}
+
+message FollowInfo{
+    int64  followingCount =1;
+    int64 followerCount =2;
+    int64 followStatus =3;
+    int64 pushStatus =4;
+    string remarkName =5;
+    string followerCountStr =6;
+    string followingCountStr =7;
+}
+
+message Image{
+}
+
+message GradeIcon{}
+
+message GradeBuffInfo{}
+
+message PayGrade{
+    int64 totalDiamondCount=1;
+    Image diamondIcon =2;
+    string name =3;
+    Image icon = 4;
+    string nextName =5;
+    int64 level = 6;
+    Image nextIcon = 7;
+    int64 nextDiamond = 8;
+    int64 nowDiamond = 9;
+    int64 thisGradeMinDiamond = 10;
+    int64 thisGradeMaxDiamond = 11;
+    int64 payDiamondBak = 12;
+    string gradeDescribe = 13;
+    repeated GradeIcon gradeIconListList =14;
+    int64 screenChatType = 15;
+    Image imIcon = 16;
+    Image imIconWithLevel = 17;
+    Image liveIcon = 18;
+    Image newImIconWithLevel = 19;
+    Image newLiveIcon = 20;
+    int64 upgradeNeedConsume =21;
+    string nextPrivileges=22;
+    Image background =23;
+    Image backgroundBack =24;
+    int64 score =25;
+    GradeBuffInfo buffInfo=26;
+    string gradeBanner =1001;
+    Image profileDialogBg =1002;
+    Image profileDialogBgBack =1003;
+}
 message User{
   string id = 1;
   string shortId = 2;
@@ -20,34 +75,24 @@ message User{
   int64 level = 6;
   string birthday = 7;
   string telephone = 8;
+  AvatarThumb avatarThumb = 9;
+  AvatarMedium avatarMedium =10;
   string city = 14;
+  FollowInfo followInfo =22;
+  PayGrade payGrade =23;
   string topVipNo = 31;
   string payScore = 34;
 }
 message DisplayText{
   string key = 1;
   string defaultPattern = 2;
-  DefaultFormat defaultFormat = 3;
+  TextFormat defaultFormat = 3;
   repeated TextPiece piecesList = 4;
-}
-
-message DefaultFormat{
-  //type: a.Message.getFieldWithDefault(e, 1, 0),
-  //                format: (o = e.getFormat()) && proto.webcast.data.TextFormat.toObject(t, o),
-  //                valueRef: a.Message.getFieldWithDefault(e, 3, ""),
-  //                stringValue: a.Message.getFieldWithDefault(e, 11, ""),
-  //                userValue: (o = e.getUserValue()) && proto.webcast.data.TextPieceUser.toObject(t, o),
-  //                giftValue: (o = e.getGiftValue()) && proto.webcast.data.TextPieceGift.toObject(t, o),
-  //                heartValue: (o = e.getHeartValue()) && proto.webcast.data.TextPieceHeart.toObject(t, o),
-  //                patternRefValue: (o = e.getPatternRefValue()) && proto.webcast.data.TextPiecePatternRef.toObject(t, o),
-  //                imageValue: (o = e.getImageValue()) && proto.webcast.data.TextPieceImage.toObject(t, o)
 }
 
 message TextPiece{
 
 }
-
-
 
 message Common{
   string method = 1;
@@ -93,6 +138,57 @@ message MemberMessage{
   string actionDescription = 11;
   string userId = 12;
   string popStr = 14;
+  AnchorDisplayText anchorDisplayText =  18;
   string userEnterTipType = 20;
   string anchorEnterTipType = 21;
+}
+
+message AnchorDisplayText{
+    string key = 1;
+    string defaultPattern =2;
+    TextFormat defaultFormat =3;
+    repeated PiecesList piecesList =4;
+}
+
+message TextFormat{
+    string color = 1;
+    bool bold = 2;
+    bool italic = 3;
+    int64 weight = 4;
+    int64 italicAngle = 5;
+    int64 fontSize = 6;
+    bool useHeighLightColor = 7;
+    bool useRemoteClor = 8;
+}
+
+message PiecesList{
+    int64 type = 1;
+    TextFormat format = 2;
+    string valueRef = 3;
+    string stringValue = 11;
+    TextPieceUser userValue = 21;
+    TextPieceGift giftValue = 22;
+    TextPieceHeart heartValue =23;
+    PatternRefValue patternRefValue = 24;
+    TextPieceImage imageValue =25;
+}
+
+message TextPieceUser{
+    User user = 1;
+    bool withColon = 2;
+}
+
+message TextPieceGift{
+
+}
+
+message TextPieceHeart{
+
+}
+
+message PatternRefValue{
+
+}
+
+message TextPieceImage{
 }

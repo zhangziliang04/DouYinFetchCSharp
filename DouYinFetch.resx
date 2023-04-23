@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WelcomeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WelcomeCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="WelcomeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 76</value>
+  </data>
+  <data name="WelcomeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="WelcomeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="WelcomeCheckBox.Text" xml:space="preserve">
+    <value>互动配置</value>
+  </data>
   <data name="&gt;&gt;WelcomeCheckBox.Name" xml:space="preserve">
     <value>WelcomeCheckBox</value>
   </data>
@@ -128,6 +149,27 @@
   </data>
   <data name="&gt;&gt;WelcomeCheckBox.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="peopleCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="peopleCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="peopleCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="peopleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 53</value>
+  </data>
+  <data name="peopleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="peopleCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="peopleCheckBox.Text" xml:space="preserve">
+    <value>是否展示人员进入</value>
   </data>
   <data name="&gt;&gt;peopleCheckBox.Name" xml:space="preserve">
     <value>peopleCheckBox</value>
@@ -141,6 +183,24 @@
   <data name="&gt;&gt;peopleCheckBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="danmuCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="danmuCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="danmuCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 30</value>
+  </data>
+  <data name="danmuCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="danmuCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="danmuCheckBox.Text" xml:space="preserve">
+    <value>是否展示弹幕</value>
+  </data>
   <data name="&gt;&gt;danmuCheckBox.Name" xml:space="preserve">
     <value>danmuCheckBox</value>
   </data>
@@ -153,11 +213,6 @@
   <data name="&gt;&gt;danmuCheckBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="configBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="configBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>443, 28</value>
   </data>
@@ -182,7 +237,138 @@
   <data name="&gt;&gt;configBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="&gt;&gt;loginButt.Name" xml:space="preserve">
+    <value>loginButt</value>
+  </data>
+  <data name="&gt;&gt;loginButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loginButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;loginButt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.Name" xml:space="preserve">
+    <value>selectLiveButt</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;selectLiveButt.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.Name" xml:space="preserve">
+    <value>liveHallButt</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;liveHallButt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;listenButt.Name" xml:space="preserve">
+    <value>listenButt</value>
+  </data>
+  <data name="&gt;&gt;listenButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listenButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;listenButt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;initButt.Name" xml:space="preserve">
+    <value>initButt</value>
+  </data>
+  <data name="&gt;&gt;initButt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;initButt.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;initButt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.Name" xml:space="preserve">
+    <value>roomUrlText</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;roomUrlText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.Name" xml:space="preserve">
+    <value>roomUrlLabel</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.Parent" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;roomUrlLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="roomBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="roomBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 144</value>
+  </data>
+  <data name="roomBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="roomBox.Text" xml:space="preserve">
+    <value>房间配置</value>
+  </data>
+  <data name="&gt;&gt;roomBox.Name" xml:space="preserve">
+    <value>roomBox</value>
+  </data>
+  <data name="&gt;&gt;roomBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roomBox.Parent" xml:space="preserve">
+    <value>configAllBox</value>
+  </data>
+  <data name="&gt;&gt;roomBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="configAllBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 429</value>
+  </data>
+  <data name="configAllBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>863, 180</value>
+  </data>
+  <data name="configAllBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="configAllBox.Text" xml:space="preserve">
+    <value>配置信息</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.Name" xml:space="preserve">
+    <value>configAllBox</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;configAllBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="loginButt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -374,150 +560,6 @@
   </data>
   <data name="&gt;&gt;roomUrlLabel.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="roomBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 28</value>
-  </data>
-  <data name="roomBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>428, 144</value>
-  </data>
-  <data name="roomBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="roomBox.Text" xml:space="preserve">
-    <value>房间配置</value>
-  </data>
-  <data name="&gt;&gt;roomBox.Name" xml:space="preserve">
-    <value>roomBox</value>
-  </data>
-  <data name="&gt;&gt;roomBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;roomBox.Parent" xml:space="preserve">
-    <value>configAllBox</value>
-  </data>
-  <data name="&gt;&gt;roomBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="configAllBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 429</value>
-  </data>
-  <data name="configAllBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>863, 180</value>
-  </data>
-  <data name="configAllBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="configAllBox.Text" xml:space="preserve">
-    <value>配置信息</value>
-  </data>
-  <data name="&gt;&gt;configAllBox.Name" xml:space="preserve">
-    <value>configAllBox</value>
-  </data>
-  <data name="&gt;&gt;configAllBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;configAllBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;configAllBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="WelcomeCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="WelcomeCheckBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WelcomeCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="WelcomeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 76</value>
-  </data>
-  <data name="WelcomeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 16</value>
-  </data>
-  <data name="WelcomeCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="WelcomeCheckBox.Text" xml:space="preserve">
-    <value>欢迎进入直播间</value>
-  </data>
-  <data name="&gt;&gt;WelcomeCheckBox.Name" xml:space="preserve">
-    <value>WelcomeCheckBox</value>
-  </data>
-  <data name="&gt;&gt;WelcomeCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WelcomeCheckBox.Parent" xml:space="preserve">
-    <value>configBox</value>
-  </data>
-  <data name="&gt;&gt;WelcomeCheckBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="peopleCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="peopleCheckBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="peopleCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="peopleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 53</value>
-  </data>
-  <data name="peopleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 16</value>
-  </data>
-  <data name="peopleCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="peopleCheckBox.Text" xml:space="preserve">
-    <value>是否展示人员进入</value>
-  </data>
-  <data name="&gt;&gt;peopleCheckBox.Name" xml:space="preserve">
-    <value>peopleCheckBox</value>
-  </data>
-  <data name="&gt;&gt;peopleCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;peopleCheckBox.Parent" xml:space="preserve">
-    <value>configBox</value>
-  </data>
-  <data name="&gt;&gt;peopleCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="danmuCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="danmuCheckBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="danmuCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 30</value>
-  </data>
-  <data name="danmuCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="danmuCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="danmuCheckBox.Text" xml:space="preserve">
-    <value>是否展示弹幕</value>
-  </data>
-  <data name="&gt;&gt;danmuCheckBox.Name" xml:space="preserve">
-    <value>danmuCheckBox</value>
-  </data>
-  <data name="&gt;&gt;danmuCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;danmuCheckBox.Parent" xml:space="preserve">
-    <value>configBox</value>
-  </data>
-  <data name="&gt;&gt;danmuCheckBox.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;giftBox.Name" xml:space="preserve">
     <value>giftBox</value>
@@ -794,6 +836,138 @@
   </data>
   <data name="&gt;&gt;userGroup.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tokenText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tokenText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tokenText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 185</value>
+  </data>
+  <data name="tokenText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tokenText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="tokenText.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="tokenText.Text" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="&gt;&gt;tokenText.Name" xml:space="preserve">
+    <value>tokenText</value>
+  </data>
+  <data name="&gt;&gt;tokenText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tokenText.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;tokenText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tokenLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tokenLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tokenLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 185</value>
+  </data>
+  <data name="tokenLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tokenLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="tokenLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="tokenLabel.Text" xml:space="preserve">
+    <value>token:</value>
+  </data>
+  <data name="&gt;&gt;tokenLabel.Name" xml:space="preserve">
+    <value>tokenLabel</value>
+  </data>
+  <data name="&gt;&gt;tokenLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tokenLabel.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;tokenLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sexText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sexText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sexText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 163</value>
+  </data>
+  <data name="sexText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="sexText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="sexText.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="sexText.Text" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="&gt;&gt;sexText.Name" xml:space="preserve">
+    <value>sexText</value>
+  </data>
+  <data name="&gt;&gt;sexText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sexText.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;sexText.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="sexLab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sexLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sexLab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 163</value>
+  </data>
+  <data name="sexLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="sexLab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="sexLab.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="sexLab.Text" xml:space="preserve">
+    <value>性别:</value>
+  </data>
+  <data name="&gt;&gt;sexLab.Name" xml:space="preserve">
+    <value>sexLab</value>
+  </data>
+  <data name="&gt;&gt;sexLab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sexLab.Parent" xml:space="preserve">
+    <value>userGroup</value>
+  </data>
+  <data name="&gt;&gt;sexLab.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="followText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1412,138 +1586,6 @@
   </data>
   <data name="&gt;&gt;peopleText.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="sexLab.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="sexLab.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="sexLab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 163</value>
-  </data>
-  <data name="sexLab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="sexLab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
-  </data>
-  <data name="sexLab.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="sexLab.Text" xml:space="preserve">
-    <value>性别:</value>
-  </data>
-  <data name="&gt;&gt;sexLab.Name" xml:space="preserve">
-    <value>sexLab</value>
-  </data>
-  <data name="&gt;&gt;sexLab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sexLab.Parent" xml:space="preserve">
-    <value>userGroup</value>
-  </data>
-  <data name="&gt;&gt;sexLab.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="sexText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="sexText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="sexText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 163</value>
-  </data>
-  <data name="sexText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="sexText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 12</value>
-  </data>
-  <data name="sexText.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="sexText.Text" xml:space="preserve">
-    <value>无</value>
-  </data>
-  <data name="&gt;&gt;sexText.Name" xml:space="preserve">
-    <value>sexText</value>
-  </data>
-  <data name="&gt;&gt;sexText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sexText.Parent" xml:space="preserve">
-    <value>userGroup</value>
-  </data>
-  <data name="&gt;&gt;sexText.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tokenText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tokenText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tokenText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 185</value>
-  </data>
-  <data name="tokenText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tokenText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 12</value>
-  </data>
-  <data name="tokenText.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="tokenText.Text" xml:space="preserve">
-    <value>无</value>
-  </data>
-  <data name="&gt;&gt;tokenText.Name" xml:space="preserve">
-    <value>tokenText</value>
-  </data>
-  <data name="&gt;&gt;tokenText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tokenText.Parent" xml:space="preserve">
-    <value>userGroup</value>
-  </data>
-  <data name="&gt;&gt;tokenText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tokenLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tokenLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tokenLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 185</value>
-  </data>
-  <data name="tokenLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tokenLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="tokenLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="tokenLabel.Text" xml:space="preserve">
-    <value>token:</value>
-  </data>
-  <data name="&gt;&gt;tokenLabel.Name" xml:space="preserve">
-    <value>tokenLabel</value>
-  </data>
-  <data name="&gt;&gt;tokenLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tokenLabel.Parent" xml:space="preserve">
-    <value>userGroup</value>
-  </data>
-  <data name="&gt;&gt;tokenLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

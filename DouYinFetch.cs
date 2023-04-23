@@ -27,6 +27,8 @@ namespace DouYinFetch
 
         public static LiveHall liveHall = null;
 
+        public static WelcomConfigFrame welcomeConfigFrame = null;
+
         WebSocketLink webSocket = null;
 
         public static string token = null;
@@ -42,11 +44,12 @@ namespace DouYinFetch
         private void InitConfig()
         {
             ConfigProperties.CreateConfigINI();
-            string token = ConfigProperties.GetINIFileString("config", "token", null, ConfigProperties.strPath);
+            token = ConfigProperties.GetINIFileString("config", "token", null, ConfigProperties.strPath);
             danmuCheckBox.Checked =  ConfigProperties.GetINIFileString("comp", "danmuCB", "true", ConfigProperties.strPath) == "true"?true:false;
             peopleCheckBox.Checked = ConfigProperties.GetINIFileString("comp", "peopleCB", "true", ConfigProperties.strPath) == "true" ? true : false;
             WelcomeCheckBox.Checked = ConfigProperties.GetINIFileString("comp", "welcomeCB", "true", ConfigProperties.strPath) == "true" ? true : false;
             tokenText.Text = token;
+
             if(!string.IsNullOrEmpty(token))
             {
                 GetUserInfo(token);
@@ -530,12 +533,6 @@ namespace DouYinFetch
             }
         }
 
-        private void WelcomeCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            ConfigProperties.CreateConfigINI();
-            ConfigProperties.WritePrivateProfileString("comp", "welcomeCB", WelcomeCheckBox.Checked?"true":"false", ConfigProperties.strPath);
-        }
-
         private void WelcomeCheckBox_MouseHover(object sender, EventArgs e)
         {
             ToolTip WelcomeTip = new ToolTip();
@@ -545,16 +542,39 @@ namespace DouYinFetch
             WelcomeTip.SetToolTip(this.WelcomeCheckBox, "对进入直播间的用户进行欢迎");
         }
 
-        private void danmuCheckBox_CheckedChanged(object sender, EventArgs e)
+
+        private void WelcomeCheckBox_MouseClick(object sender, MouseEventArgs e)
         {
             ConfigProperties.CreateConfigINI();
-            ConfigProperties.WritePrivateProfileString("comp","danmuCB",danmuCheckBox.Checked ? "true" : "false", ConfigProperties.strPath);
+            ConfigProperties.WritePrivateProfileString("comp", "welcomeCB", WelcomeCheckBox.Checked ? "true" : "false", ConfigProperties.strPath);
         }
 
-        private void peopleCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void peopleCheckBox_MouseClick(object sender, MouseEventArgs e)
         {
             ConfigProperties.CreateConfigINI();
             ConfigProperties.WritePrivateProfileString("comp", "peopleCB", peopleCheckBox.Checked ? "true" : "false", ConfigProperties.strPath);
+        }
+
+        private void danmuCheckBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            ConfigProperties.CreateConfigINI();
+            ConfigProperties.WritePrivateProfileString("comp", "danmuCB", danmuCheckBox.Checked ? "true" : "false", ConfigProperties.strPath);
+        }
+
+        private void WelcomeCheckBox_Click(object sender, EventArgs e)
+        {
+            welcomeConfigFrame = new WelcomConfigFrame();
+            if (WelcomeCheckBox.Checked) {
+                if (null == welcomeConfigFrame)
+                {
+                    welcomeConfigFrame = new WelcomConfigFrame();
+                    welcomeConfigFrame.Show();
+                }
+                else
+                {
+                    welcomeConfigFrame.Show();
+                }
+            }
         }
     }
 }

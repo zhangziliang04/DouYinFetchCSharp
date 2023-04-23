@@ -1,4 +1,5 @@
 ﻿using DouYinFetch;
+using DouYinFetch.utils;
 using Google.Protobuf;
 using Google.Protobuf.Collections;
 using Proto;
@@ -100,12 +101,26 @@ public class WebSocketLink
                     }
                     break;
                 case MessageEnum.WebcastMemberMessage:
+                    MemberMessage memberMessage = MemberMessage.Parser.ParseFrom(message.Payload);
+                    //是否展示人员进入
                     if (DouYinFetch.DouYinFetch.frame.peopleCheckBox.Checked) {
-                        MemberMessage memberMessage = MemberMessage.Parser.ParseFrom(message.Payload);
-                        //anchorDisplayText.piecesList[0].userValue.user.payGrade.level
                         String nickname = memberMessage.User.Nickname;
                         UpdateText(DouYinFetch.DouYinFetch.frame.roomCountText, memberMessage.MemberCount.ToString());
                         AppendText(DouYinFetch.DouYinFetch.frame.peopleText, nickname + " 来了" + "\r\n");
+                    }
+                    //欢迎配置
+                    if (DouYinFetch.DouYinFetch.frame.WelcomeCheckBox.Checked)
+                    {
+                        ConfigProperties.CreateConfigINI();
+                        long payLevel =long.Parse(ConfigProperties.GetINIFileString("comp", "payLevel", "0", ConfigProperties.strPath));
+                        string welcomeText = ConfigProperties.GetINIFileString("comp", "welcomeText", "欢迎{user}进入直播间", ConfigProperties.strPath);
+                        //anchorDisplayText.piecesList[0].userValue.user.payGrade.level
+                        long level = memberMessage.AnchorDisplayText.PiecesList[0].UserValue.User.PayGrade.Level;
+                        string username = memberMessage.AnchorDisplayText.PiecesList[0].UserValue.User.Nickname;
+                        if (level >= payLevel) {
+                            //发送聊天
+                            MessageBox.Show("欢迎:"+username+"进入直播间");
+                        }
                     }
                     break;
                 default:

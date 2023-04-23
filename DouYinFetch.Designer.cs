@@ -46,6 +46,10 @@
             this.giftBox = new System.Windows.Forms.GroupBox();
             this.giftText = new System.Windows.Forms.TextBox();
             this.userGroup = new System.Windows.Forms.GroupBox();
+            this.tokenText = new System.Windows.Forms.Label();
+            this.tokenLabel = new System.Windows.Forms.Label();
+            this.sexText = new System.Windows.Forms.Label();
+            this.sexLab = new System.Windows.Forms.Label();
             this.followText = new System.Windows.Forms.Label();
             this.followLab = new System.Windows.Forms.Label();
             this.userPic = new System.Windows.Forms.PictureBox();
@@ -63,10 +67,6 @@
             this.danmuText = new System.Windows.Forms.TextBox();
             this.peopleBox = new System.Windows.Forms.GroupBox();
             this.peopleText = new System.Windows.Forms.TextBox();
-            this.sexLab = new System.Windows.Forms.Label();
-            this.sexText = new System.Windows.Forms.Label();
-            this.tokenText = new System.Windows.Forms.Label();
-            this.tokenLabel = new System.Windows.Forms.Label();
             this.configAllBox.SuspendLayout();
             this.configBox.SuspendLayout();
             this.roomBox.SuspendLayout();
@@ -104,7 +104,8 @@
             this.WelcomeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.WelcomeCheckBox.Name = "WelcomeCheckBox";
             this.WelcomeCheckBox.UseVisualStyleBackColor = true;
-            this.WelcomeCheckBox.CheckedChanged += new System.EventHandler(this.WelcomeCheckBox_CheckedChanged);
+            this.WelcomeCheckBox.Click += new System.EventHandler(this.WelcomeCheckBox_Click);
+            this.WelcomeCheckBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WelcomeCheckBox_MouseClick);
             this.WelcomeCheckBox.MouseHover += new System.EventHandler(this.WelcomeCheckBox_MouseHover);
             // 
             // peopleCheckBox
@@ -114,7 +115,7 @@
             this.peopleCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.peopleCheckBox.Name = "peopleCheckBox";
             this.peopleCheckBox.UseVisualStyleBackColor = true;
-            this.peopleCheckBox.CheckedChanged += new System.EventHandler(this.peopleCheckBox_CheckedChanged);
+            this.peopleCheckBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.peopleCheckBox_MouseClick);
             // 
             // danmuCheckBox
             // 
@@ -123,7 +124,7 @@
             this.danmuCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.danmuCheckBox.Name = "danmuCheckBox";
             this.danmuCheckBox.UseVisualStyleBackColor = true;
-            this.danmuCheckBox.CheckedChanged += new System.EventHandler(this.danmuCheckBox_CheckedChanged);
+            this.danmuCheckBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.danmuCheckBox_MouseClick);
             // 
             // roomBox
             // 
@@ -223,6 +224,26 @@
             resources.ApplyResources(this.userGroup, "userGroup");
             this.userGroup.Name = "userGroup";
             this.userGroup.TabStop = false;
+            // 
+            // tokenText
+            // 
+            resources.ApplyResources(this.tokenText, "tokenText");
+            this.tokenText.Name = "tokenText";
+            // 
+            // tokenLabel
+            // 
+            resources.ApplyResources(this.tokenLabel, "tokenLabel");
+            this.tokenLabel.Name = "tokenLabel";
+            // 
+            // sexText
+            // 
+            resources.ApplyResources(this.sexText, "sexText");
+            this.sexText.Name = "sexText";
+            // 
+            // sexLab
+            // 
+            resources.ApplyResources(this.sexLab, "sexLab");
+            this.sexLab.Name = "sexLab";
             // 
             // followText
             // 
@@ -333,26 +354,6 @@
             resources.ApplyResources(this.peopleText, "peopleText");
             this.peopleText.Name = "peopleText";
             this.peopleText.ReadOnly = true;
-            // 
-            // sexLab
-            // 
-            resources.ApplyResources(this.sexLab, "sexLab");
-            this.sexLab.Name = "sexLab";
-            // 
-            // sexText
-            // 
-            resources.ApplyResources(this.sexText, "sexText");
-            this.sexText.Name = "sexText";
-            // 
-            // tokenText
-            // 
-            resources.ApplyResources(this.tokenText, "tokenText");
-            this.tokenText.Name = "tokenText";
-            // 
-            // tokenLabel
-            // 
-            resources.ApplyResources(this.tokenLabel, "tokenLabel");
-            this.tokenLabel.Name = "tokenLabel";
             // 
             // DouYinFetch
             // 

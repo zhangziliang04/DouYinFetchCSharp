@@ -40,6 +40,7 @@
             this.Name = "LiveHall";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "直播大厅";
+            this.Load += new System.EventHandler(this.LiveHall_Load);
             this.ResumeLayout(false);
 
         }

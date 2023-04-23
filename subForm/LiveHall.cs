@@ -23,5 +23,10 @@ namespace DouYinFetch.subForm
             //展示导航栏
             string contentUrl = "https://live.douyin.com/webcast/web/partition/detail/room/?aid=6383&count=12&offset=0&partition=591&partition_type=1";
         }
+
+        private void LiveHall_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
